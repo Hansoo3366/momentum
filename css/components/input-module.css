@@ -1,0 +1,20 @@
+#todo-form input,
+.enter-module input {
+  width: 200px;
+  height: 30px;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid black;
+}
+
+#todo-form input {
+  width: 300px;
+}
+
+#todo-form input::placeholder,
+.enter-module input::placeholder {
+  color: black;
+  font-size: 18px;
+  font-family: 'LeferiPoint-WhiteObliqueA';
+}

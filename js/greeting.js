@@ -2,6 +2,9 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const quotes_class = document.querySelector("#quotes");
+const weather = document.querySelector("#weather");
+const todoList = document.querySelector(".todo-module");
 
 const HIDDEN_CLASSNAME = "hidden"
 const USERNAME_KEY = "username"
@@ -17,7 +20,10 @@ function onLoginSubmit(event) {
 
 function paintGreetings(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME);
-    greeting.innerText = `Hello ${username}`;
+    quotes_class.classList.remove(HIDDEN_CLASSNAME);
+    weather.classList.remove(HIDDEN_CLASSNAME);
+    todoList.classList.remove(HIDDEN_CLASSNAME);
+    greeting.innerText = `Hello! ${username}`;
 }
 
 
