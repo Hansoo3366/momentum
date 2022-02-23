@@ -10,22 +10,8 @@
 
 /*Font*/
 @font-face {
-  font-family: 'GmarketSansBold';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GmarketSansLight';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'GmarketSansMedium';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-family: 'ImcreSoojin';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -62,21 +48,39 @@ body {
   z-index: -1;
 }
 
-div#container {
-  width: 80%;
+#container {
+  width: 60%;
   height: 80vh;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px 50px;
 }
 
-div#container-left {
+#container-left {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   height: 100%;
+}
+
+@keyframes bg-imageColor {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#bg-image {
+  opacity: 1;
+  animation: bg-imageColor ease-in-out 6s infinite;
 }

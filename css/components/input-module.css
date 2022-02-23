@@ -6,6 +6,7 @@
   background-color: transparent;
   border: none;
   border-bottom: 3px solid black;
+  font-size: 18px;
 }
 
 #todo-form input {

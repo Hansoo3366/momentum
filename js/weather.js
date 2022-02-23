@@ -9,10 +9,15 @@ function onGeoOk(position) {
     .then(data => {
         const weather = document.querySelector("#weather span:nth-child(3)");
         const city = document.querySelector("#weather span:first-child");
-        const temp = document.querySelector("#weather span:nth-child(2)")
+        const temp = document.querySelector("#weather span:nth-child(2)");
+        const tempHigh = document.querySelector(".temp-low-high span:first-child");
+        const tempLow = document.querySelector(".temp-low-high span:last-child");
         city.innerText = `${data.name}-gu`;
         weather.innerText = data.weather[0].main;
-        temp.innerText = Math.round(data.main.temp);
+        temp.innerText = `${Math.round(data.main.temp)}°`;
+        tempHigh.innerText = `H:${Math.round(data.main.temp_max)}°`;
+        tempLow.innerText = `L:${Math.round(data.main.temp_min)}°`;
+        
     });
 }
 

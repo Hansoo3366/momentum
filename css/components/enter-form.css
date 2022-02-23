@@ -1,13 +1,16 @@
 .enter-module {
   width: 400px;
-  height: 300px;
+  height: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  border: 1px black solid;
   font-size: 96px;
-  font-family: 'GmarketSansMedium';
+  font-family: 'ImcreSoojin';
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .enter-module button {
@@ -22,4 +25,5 @@
 
 #greeting {
   font-size: 24px;
+  font-weight: lighter;
 }
