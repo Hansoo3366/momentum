@@ -8,27 +8,49 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h2 id="clock">00:00:00</h2>
-    <form class="hidden" id="login-form">
-        <input required maxlength="15" type="text" placeholder="What is your name?" />
-        <button>Log In</button>
-    </form>
-    <h1 id="greeting" class="hidden"></h1>
+    <div id="container">
+        <div id="container-left">
+            <div class="enter-module">
+                <h2 id="clock">00:00</h2>
+                <form class="hidden" id="login-form">
+                    <input required maxlength="15" type="text" placeholder="What is your name?" />
+                    <button>Log In</button>
+                </form>
+                <h1 id="greeting" class="hidden"></h1>
+            </div>
+            <div id="weather" class="hidden">
+                <span class="weather__medium">City</span>
+                <span class="weather__big">0°</span>
+                <span class="weather__small">Sunny</span>         
+                <div class="temp-low-high weather__small">
+                    <span>0°</span>
+                    <span>0°</span>
+                </div>
+                
+            </div>
+        </div>
+        <div class="todo-module hidden">  
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter" required />
+            </form>
     
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
+            <ul id="todo-list"></ul>    
+        </div>
+     
+    
 
-    <ul id="todo-list"></ul>    
 
-    <div id="quotes">
+    </div>
+    <div id="quotes" class="hidden">
         <span></span>
         <span></span>
     </div>
+    
     <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
 </body>
 </html>
